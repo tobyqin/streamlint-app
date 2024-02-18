@@ -8,13 +8,18 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from utils import add_logo
-from st_pages import show_pages_from_config,add_page_title
+from st_pages import show_pages_from_config, add_page_title
 
 st.set_page_config(
-   page_title="My Cool App",
-   page_icon="🧊",
-   layout="wide",
-   initial_sidebar_state="expanded",
+    page_title="My Cool App",
+    page_icon="🧊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.myapp.com/help',
+        'Report a bug': "https://www.myapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
 )
 
 # from streamlit_extras.app_logo import add_logo
@@ -65,7 +70,10 @@ add_slider = st.sidebar.slider(
     0.0, 100.0, (25.0, 75.0)
 )
 
+st.sidebar.divider()
 st.sidebar.caption("Powered by tobyqin.cn")
+
+st.toast('Your edited image was saved!', icon='😍')
 
 # Insert containers separated into tabs:
 tab1, tab2, tab3 = st.tabs(["Document", "API Reference", "Demo"])
