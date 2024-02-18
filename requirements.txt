@@ -4,3 +4,4 @@ pandas
 numpy
 htbuilder
 watchdog
+st-pages

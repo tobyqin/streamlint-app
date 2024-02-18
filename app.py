@@ -8,16 +8,27 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from utils import add_logo
+from st_pages import show_pages_from_config,add_page_title
+
+st.set_page_config(
+   page_title="My Cool App",
+   page_icon="🧊",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
 
 # from streamlit_extras.app_logo import add_logo
 
+add_page_title()
+show_pages_from_config()
+add_logo()
 
 # add kitten logo
 # add_logo("https://placekitten.com/100/100")
 # add_logo("https://placekitten.com/100/100", height=100)
 st.header("Welcome to my app!")
 
-add_logo()
+# add_logo()
 
 
 #
@@ -31,15 +42,15 @@ df = pd.DataFrame({
     'second': [4, 5, 6, 7, 8],
 })
 
-st.sidebar.page_link('app.py', label="Home", icon="🏠")
-st.sidebar.page_link("pages/demo.py", label="Demo", icon="🌠")
-st.sidebar.page_link("pages/example.py", label="Example", icon="🧭")
-st.sidebar.page_link("pages/footer.py", label="Footer")
-st.sidebar.page_link("pages/better_footer.py", label="Better Footer")
-st.sidebar.page_link("pages/logo.py", label="Logo")
-st.sidebar.page_link("pages/example.py", label="Example")
-st.sidebar.page_link("pages/hello.py", label="Hello")
-st.sidebar.page_link("pages/show_image.py", label="Image")
+# st.sidebar.page_link('app.py', label="Home", icon="🏠")
+# st.sidebar.page_link("pages/demo.py", label="Demo", icon="🌠")
+# st.sidebar.page_link("pages/example.py", label="Example", icon="🧭")
+# st.sidebar.page_link("pages/footer.py", label="Footer")
+# st.sidebar.page_link("pages/better_footer.py", label="Better Footer")
+# st.sidebar.page_link("pages/logo.py", label="Logo")
+# st.sidebar.page_link("pages/example.py", label="Example")
+# st.sidebar.page_link("pages/hello.py", label="Hello")
+# st.sidebar.page_link("pages/show_image.py", label="Image")
 
 
 # Add a selectbox to the sidebar:

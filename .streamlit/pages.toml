@@ -1,0 +1,38 @@
+[[pages]]
+path = "app.py"
+name = "Home"
+icon = ":house:"
+
+[[pages]]
+path = "pages/demo.py"
+name = "Demo"
+icon = ":books:"
+
+[[pages]]
+name = "Examples"
+icon = ":pig:"
+is_section = true
+
+[[pages]]
+path = "pages/example.py"
+name = "Example1"
+icon = "📖"
+
+[[pages]]
+path = "pages/example.py"
+name = "Example Two"
+icon = "✏️"
+
+[[pages]]
+name = "Other apps"
+icon = ":horse:"
+is_section = true
+
+[[pages]]
+path = "pages/footer.py"
+
+[[pages]]
+path = "pages/logo.py"
+name = "Example Five"
+icon = "🧰"
+in_section = false
