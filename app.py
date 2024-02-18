@@ -35,9 +35,12 @@ st.sidebar.page_link('app.py', label="Home", icon="🏠")
 st.sidebar.page_link("pages/demo.py", label="Demo", icon="🌠")
 st.sidebar.page_link("pages/example.py", label="Example", icon="🧭")
 st.sidebar.page_link("pages/footer.py", label="Footer")
+st.sidebar.page_link("pages/better_footer.py", label="Better Footer")
 st.sidebar.page_link("pages/logo.py", label="Logo")
 st.sidebar.page_link("pages/example.py", label="Example")
 st.sidebar.page_link("pages/hello.py", label="Hello")
+st.sidebar.page_link("pages/show_image.py", label="Image")
+
 
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(

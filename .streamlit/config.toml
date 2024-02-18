@@ -4,3 +4,4 @@ toolbarMode = "auto"
 
 [server]
 baseUrlPath="app"
+enableStaticServing = "true"
