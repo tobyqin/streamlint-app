@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="My Cool App",
     page_icon="🧊",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
     menu_items={
         'Get Help': 'https://www.myapp.com/help',
         'Report a bug': "https://www.myapp.com/bug",
